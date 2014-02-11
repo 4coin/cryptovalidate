@@ -1,0 +1,18 @@
+Thrown together by tshabs.
+=====================================
+
+Description:  This script will check the length and checksum of any (bitcoin based) cryptocurrency public address.  It will not differentiate between different crypto currencies (if a DOGE address is supposed to be entered but an LTC address is entered it will return as valid; the main use of this script is to prevent typos in addresses).  Results of address validation are avilable in boolean, integer or string mode.
+
+1.  Ensure you have php-bcmath installed (on centos: yum install php-devel php-bcmath)
+
+2.  Upload files to PHP capable webserver.
+
+3.  Include validatecrypto.php in your script.  Eg.  require_once('script/validatecrypto.php');
+
+4.  Adjust the config in validatecrypto.php to change output (eg, to modify the output of string mode).
+
+5.  Use by calling: string checkAddress ( string $address, string $mode ) (Available options for mode are: b, n, s for boolean, number and string respectivley)
+
+6.  Have fun !
+
+Project Homepage: http://www.cryptovalidate.com
