@@ -39,9 +39,9 @@
     $check = strtoupper(hash("sha256", hash("sha256", $check, true)));
     $check = substr($check, 0, 8);
     if($check == substr($addr, strlen($addr) - 8)){
-    return $bad_checksum_error;
+      return $valid_address_error;
     }else{
-        return $valid_address_error;
+        return $bad_checksum_error;
         }
   }
 
