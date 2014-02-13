@@ -11,9 +11,9 @@
    //some settings
    if($mode == 's'){
        //string mode selected
-   $bad_length_error = "bad length";
-   $bad_checksum_error = "bad checksum";
-   $valid_address_error = "all good";
+   $bad_length_error = "Bad Length";
+   $bad_checksum_error = "Bad Checksum";
+   $valid_address_error = "Valid Address";
    }elseif($mode == 'n'){
        //number mode selected
    //probably better settings for real world use (return integer)
